@@ -76,6 +76,7 @@ var jsModules = [
     'src/js/course/course_edit1.js',
     'src/js/course/course_edit2.js',
     'src/js/course/course_edit3.js',
+    'src/js/course/list.js',
     // 学科分类
     'src/js/category/add.js',
     'src/js/category/edit.js',

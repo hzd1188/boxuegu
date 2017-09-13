@@ -12,9 +12,11 @@ var util = require('../common/util');
 
 var cg_id = util.getSearch('cg_id');
 $.get('/v6/category/edit', { cg_id: cg_id }, function(data) {
-    var html = template('form-tpl', data.result);
-    $('.category-edit').html(html);
+    if (data.code) {
+        var html = template('form-tpl', data.result);
+        $('.category-edit').html(html);
 
+    }
 })
 
 
